@@ -6,6 +6,9 @@ public class UsingContructors {
 
         System.out.println(tom.name);
         System.out.println(snowbell.name);
+
+        tom.eat();
+        snowbell.eat();
     }
 }
 
@@ -25,11 +28,14 @@ class Cat2{
     }
 
     public void eat(){
-        System.out.println("Cat eats");
+
+        System.out.println(this.name +" eats");
     }
 
     public void speak(){
         System.out.println("Cat speaks - 'meow' ");
     }
+
+
 
 }

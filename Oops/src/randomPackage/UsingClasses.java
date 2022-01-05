@@ -1,3 +1,5 @@
+package randomPackage;
+
 public class UsingClasses {
     public static void main(String[] args) {
 

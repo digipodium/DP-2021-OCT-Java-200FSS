@@ -15,12 +15,15 @@ public class UsingInheritance {
 
 
         Laptop lappy = new Laptop("10 GB", "256 GB", 6, "1080p");
-        lappy.turnOn();
 
         String res = lappy.getResolution();
         System.out.println(res);
 
         System.out.println(lappy.getRam());
+
+        lappy.turnOn();
+
+        Laptop lappy2 = new Laptop("16 GB", "500 GB");
     }
 }
 
@@ -66,7 +69,10 @@ class Laptop extends Computer{
         super(ram, storage);
         this.wifi_version = wifi_version;
         this.resolution = resolution;
+    }
 
+    public Laptop(String ram, String storage) {
+        super(ram, storage);
     }
 
     public int getWifi_version() {
@@ -83,5 +89,9 @@ class Laptop extends Computer{
 
     public void setResolution(String resolution) {
         this.resolution = resolution;
+    }
+
+    public void turnOn(){
+        System.out.println("Laptop is turning on...");
     }
 }

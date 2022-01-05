@@ -4,7 +4,8 @@ public class MethodOverloading {
 
         int sqr_area = calcArea(10);
         int rec_area = calcArea(30, 13);
-        float circle_area = calcArea(43.5f);
+        float circle_area = calcArea(43.65f);
+        float x = 243.34f;
 
 
         System.out.println(sqr_area);
@@ -23,6 +24,8 @@ public class MethodOverloading {
     public static float calcArea(float radius){
         return (float) 3.14 * radius * radius;
     }
+
+
 
 }
 

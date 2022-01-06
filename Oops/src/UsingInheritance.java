@@ -95,3 +95,38 @@ class Laptop extends Computer{
         System.out.println("Laptop is turning on...");
     }
 }
+
+
+class GamingLaptop extends Laptop {
+
+    private String graphic_card;
+    private boolean backlit_keys;
+
+
+    public GamingLaptop(String ram, String storage, int wifi_version, String resolution) {
+        super(ram, storage, wifi_version, resolution);
+    }
+
+    public GamingLaptop(String ram, String storage) {
+        super(ram, storage);
+    }
+}
+
+class Notebook extends Laptop {
+
+    private boolean convertible;
+    private boolean touch_screen;
+
+
+    public Notebook(String ram, String storage, int wifi_version, String resolution) {
+        super(ram, storage, wifi_version, resolution);
+    }
+
+    public Notebook(String ram, String storage) {
+        super(ram, storage);
+    }
+}
+
+//class HybridLaptop extends GamingLaptop extends Notebook{
+//
+//}

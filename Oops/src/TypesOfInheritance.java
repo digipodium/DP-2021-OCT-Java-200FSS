@@ -1,2 +1,5 @@
-package PACKAGE_NAME;public class TypesOfInheritance {
+public class TypesOfInheritance {
+    public static void main(String[] args) {
+
+    }
 }

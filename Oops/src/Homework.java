@@ -16,6 +16,13 @@ public class Homework {
         acc2.credit(5500);
 
         System.out.println(acc2.getBalance());
+
+        SavingsAccount saving1 = new SavingsAccount("Ada Wong", "286492364374", 22000);
+        saving1.debit(2300);
+
+        System.out.println(saving1.getBalance());
+
+        System.out.println(saving1.isSavingsAcc());
     }
 
 }
@@ -65,4 +72,32 @@ class Account{
         this.balance += amount;
 //        this.balance = this.balance + amount;
     }
+}
+
+class SavingsAccount extends Account {
+
+    private boolean savingsAcc = true;
+
+    public SavingsAccount(String holder_name, String acc_no, float balance) {
+        super(holder_name, acc_no, balance);
+    }
+
+    public boolean isSavingsAcc() {
+        return savingsAcc;
+    }
+
+}
+
+class CurrentAccount extends Account {
+
+    private boolean currentAcc = true;
+
+    public CurrentAccount(String holder_name, String acc_no, float balance) {
+        super(holder_name, acc_no, balance);
+    }
+
+    public boolean isCurrentAcc() {
+        return currentAcc;
+    }
+
 }

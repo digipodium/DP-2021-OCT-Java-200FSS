@@ -2,6 +2,7 @@ public class UsingContructors {
     public static void main(String[] args) {
 
         Cat2 tom = new Cat2( 10, "Thomas", 2, "grey" );
+//        Cat2 tom2 = new Cat2();
         Cat2 snowbell = new Cat2( 15, "Snowbell", 3, "white" );
 
         System.out.println(tom.name);
@@ -26,6 +27,8 @@ class Cat2{
         this.age = age;
         this.color = color;
     }
+
+
 
     public void eat(){
 

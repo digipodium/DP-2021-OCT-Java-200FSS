@@ -14,14 +14,17 @@ public class MethodOverloading {
     }
 
     public static int calcArea(int length){
+
         return length * length;
     }
 
     public static int calcArea(int length, int breadth){
+
         return length * breadth;
     }
 
     public static float calcArea(float radius){
+
         return (float) 3.14 * radius * radius;
     }
 

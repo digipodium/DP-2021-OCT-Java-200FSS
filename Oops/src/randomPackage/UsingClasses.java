@@ -8,7 +8,6 @@ public class UsingClasses {
         System.out.println(tom.name);
         tom.eat();
 
-
         Cat snowbell = new Cat();
         System.out.println(snowbell.name);
         System.out.println(snowbell.color);

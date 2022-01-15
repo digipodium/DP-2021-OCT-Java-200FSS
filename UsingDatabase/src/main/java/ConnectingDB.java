@@ -7,10 +7,6 @@ public class ConnectingDB {
     private static String password = "root";
     private static Connection conn;
 
-    public static void main(String[] args) {
-        openConnection();
-    }
-
     public static Connection openConnection(){
         try{
             Class.forName("com.mysql.cj.jdbc.Driver");
@@ -22,6 +18,7 @@ public class ConnectingDB {
             System.out.println("Error in Database Connection!!");
             return null;
         }
+
     }
 
 }

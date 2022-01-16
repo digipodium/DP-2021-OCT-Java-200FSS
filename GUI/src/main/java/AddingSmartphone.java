@@ -1,2 +1,5 @@
-package PACKAGE_NAME;public class AddingSmartphone {
+import javax.swing.*;
+
+public class AddingSmartphone {
+    private JButton button1;
 }

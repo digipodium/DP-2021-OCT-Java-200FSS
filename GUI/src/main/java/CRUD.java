@@ -6,11 +6,11 @@ import java.sql.SQLException;
 
 public class CRUD {
 
-    public void insertData(Connection con, int id, String brand, int ram, int storage, String camera){
+    public void insertData(Connection con, String brand, int ram, String storage, String model){
         try {
             Statement stmt = con.createStatement();
             String insertQuery =
-                    String.format("insert into smartphones values (%d, '%s', %d, %d, '%s') ", id, brand, ram, storage, camera);
+                    String.format("insert into laptop (brand, model, ram, storage) values ('%s', '%s', %d, '%s') ", brand, model, ram, storage);
             stmt.executeUpdate(insertQuery);
             System.out.println("Data inserted!!");
         } catch (SQLException e) {

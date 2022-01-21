@@ -12,6 +12,7 @@ public class AddingSmartphone {
     private JTextField storage;
     private JPanel mypanel;
     private static Connection conn;
+    private CRUD crud = new CRUD();
 
     public AddingSmartphone() {
         button1.addActionListener(new ActionListener() {
@@ -22,6 +23,12 @@ public class AddingSmartphone {
                 String brand_value = brand.getText();
 
                 System.out.println(brand_value);
+
+                String model_value = model.getText();
+                int ram_value = Integer.parseInt(ram.getText());
+                String storage_value = storage.getText();
+
+                crud.insertData(conn, brand_value, ram_value, storage_value, model_value);
             }
         });
     }
@@ -89,4 +96,5 @@ public class AddingSmartphone {
     public JComponent $$$getRootComponent$$$() {
         return mypanel;
     }
+
 }
